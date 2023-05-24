@@ -1,0 +1,29 @@
+<ForceField>
+  <AtomTypes>
+    <Type name="P" class="P" element="P" mass="31.0000"/>
+    <Type name="O" class="O" element="O" mass="16.0000"/>
+    <Type name="C" class="C" element="C" mass="12.0000"/>
+    <Type name="N" class="N" element="N" mass="14.0000"/>
+    <!-- Additional atom types for RNA system -->
+  </AtomTypes>
+  
+  <Residues>
+    <Residue name="G">
+      <Atom name="P" type="P"/>
+      <Atom name="OP1" type="O"/>
+      <Atom name="OP2" type="O"/>
+      <!-- Additional atoms for G -->
+    </Residue>
+    <!-- Additional residue definitions for other RNA bases -->
+  </Residues>
+  
+  <NonbondedForce>
+    <Atom type="P" charge="0.0000" sigma="1.000" epsilon="0.000"/>
+    <Atom type="O" charge="-0.5000" sigma="1.661" epsilon="0.210"/>
+    <Atom type="C" charge="0.0000" sigma="1.908" epsilon="0.109"/>
+    <Atom type="N" charge="-0.6000" sigma="1.824" epsilon="0.170"/>
+    <!-- Additional atom types and parameters for RNA system -->
+  </NonbondedForce>
+  
+  <!-- Additional force definitions for bonds, angles, dihedrals, etc. -->
+</ForceField>
